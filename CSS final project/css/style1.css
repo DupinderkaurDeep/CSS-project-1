@@ -1,0 +1,290 @@
+/* Header Styles */
+
+#header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f7f3f3;
+    color: #131212;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+#header > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#header > div > div:nth-child(1) {
+    display: flex;
+}
+
+/*Styling header's heading*/
+#header > div > div:nth-child(1) > h1 {
+    font-family: 'Beau Rivage', cursive;
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+/*Styling the nav in the header*/
+#header > div > div:nth-child(2) {
+    display: inline;
+}
+#header nav{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+#header nav ul {
+    list-style: none;
+    padding: 0;
+}
+#header nav li {
+    display: inline;
+    margin-right: 1rem;
+    padding: 0 10px;
+}
+#header nav a {
+    color: #0f0e0e;
+    text-decoration: none;
+    font-size: 24px;
+}
+#header nav a:hover{
+    color: #0e0b0b;
+}
+
+/* Style the search input and button */
+.rightNav input[type="text"] {
+ 
+    border: solid #0e0b0b 2px;
+    border-radius: .9em;
+  }
+  
+  .rightNav button {
+  
+    background-color: rgb(22, 20, 20);
+    color: #ebe5e5;
+    border: none;
+    border-radius: 5em;
+    cursor: pointer;
+  }
+
+  /*main section*/
+.masthead {
+    background-image: url('../images/about\ background.jpg');   
+    background-size: cover;
+    background-position: center;
+    color: #070606; 
+    padding: 1em; 
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .content{
+    max-width: 900px;
+    margin: auto;
+    height: 100%;
+  }
+  
+  
+  h2 {
+    margin-bottom: 1.25em;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 2;
+  }
+
+  .masthead p:hover{
+       color: #4d3232;
+  }
+
+  .masthead h2:hover{
+    transform: scale(1.05);
+  }
+ /*photos*/
+ @font-face{
+  font-family: photo font;
+  src: url(../fonts/KINGSLEY\ demo.otf);
+}
+
+ .mains h3{
+  font-family: photo font;
+    text-align: center;
+    font-weight: bold ;
+    font-style: italic;
+    font-size: 200%;
+
+   
+    
+ }
+
+ .image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.image {
+    flex: 1;
+    padding: 0%;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Individual Image Styles in the Photos Section */
+.image-ONE img,
+.image-TWO img,
+.image-THREE img,
+.image-FOUR img,
+.image-FIVE img {
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 0px #464545);
+}
+
+.image-ONE img:hover,
+.image-TWO img:hover,
+.image-THREE img:hover,
+.image-FOUR img:hover,
+.image-FIVE img:hover {
+ 
+
+ 
+  filter: drop-shadow(15px 10px 4px #0e0e0e);
+  transition: all .35s linear;
+
+}
+
+
+
+
+/* Section Styles */
+
+.section{ 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px;
+}
+/* Styles for left-aligned sections */
+.section-left{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 4em;
+}
+/* Styles for paragraphs in sections */
+.para{
+  padding: 0px 30px;
+ 
+}
+
+
+/* Styles for section tags */
+.sectionTag{
+  padding: 20px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  
+  
+ 
+}
+/* Styles for subsection tags */
+.sectionSubTag{
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1em;
+ 
+  font-style: normal;
+  font-family: 'Young Serif', serif;
+}
+/* Styles for images within the "nail" class */
+.nail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3em;
+ 
+}
+.nail img{
+
+  border: 2px solid black;
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.nail img:hover{
+  transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+/*footer section*/
+.footer {
+    background-color: white;
+    color: #0a0909;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 29px 0;
+    display: flex;
+   
+  }
+  
+ 
+  /* Styles for footer heading level 4 */
+  .footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+
+  }
+  /* Styles for footer paragraphs */
+  .footer p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #0a0909;
+  }
+  
+
+/* Styles for social icons in the footer */
+  .footer-social p {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    
+  }
+  
+  
+  
+  .footer-social img {
+   
+    height: 29px;
+    width: 29px;
+  }
+
+  /* Individual Sections in the Footer */
+  .footer-info,
+  .footer-contact,
+  .footer-social {
+    flex-basis: 199px; 
+  }
+
+
+ 

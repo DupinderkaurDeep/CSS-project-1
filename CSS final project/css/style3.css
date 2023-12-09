@@ -1,0 +1,186 @@
+#header {  /* Header Styles */
+    
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f7f3f3;
+  color: #131212;
+  text-align: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+#header > div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#header > div > div:nth-child(1) {
+  display: flex;
+}
+
+/*Styling header's heading*/
+#header > div > div:nth-child(1) > h1 {
+  font-family: 'Beau Rivage', cursive;
+  margin: 10px 0;
+  font-size: 50px;
+}
+
+/*Styling the nav in the header*/
+#header > div > div:nth-child(2) {
+  display: inline;
+}
+#header nav{
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+}
+#header nav ul {
+  list-style: none;
+  padding: 0;
+}
+#header nav li {
+  display: inline;
+  margin-right: 1rem;
+  padding: 0 10px;
+}
+#header nav a {
+  color: #0f0e0e;
+  text-decoration: none;
+  font-size: 24px;
+}
+#header nav a:hover{
+  color: #0e0b0b;
+}
+
+/* Style the search input and button */
+.rightNav input[type="text"] {
+
+  border: solid #0e0b0b 2px;
+  border-radius: .9em;
+}
+
+.rightNav button {
+
+  background-color: rgb(22, 20, 20);
+  color: #ebe5e5;
+  border: none;
+  border-radius: 5em;
+  cursor: pointer;
+}
+
+
+
+/*main section*/
+  
+/* Wedding Dress Form Styles */
+.wedding-dress-form {
+  background-color: #f8f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #0e0b0b;
+}
+/* Styles for form input elements */
+.submit-button input[type="text"],
+.submit-button input[type="tel"],
+.submit-button input[type="email"],
+.submit-button  select,
+textarea {
+  width: 100%;
+  padding: 15px; /* Adjust the padding as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px; /* Adjust the margin as needed */}
+
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Styles for the form submit button */
+.submit-button {
+  background-color: #0a0a0a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.main {
+  padding: 20px;
+  background-image: url(../images/contact-page.jpg);
+  background-size: cover; /* Adjust the background size property as needed */
+  background-position: center; /* Adjust the background position property as needed */
+ 
+}
+
+/*footer section*/
+.footer {
+  background-color: white;
+  color: #0a0909;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 29px 0;
+  display: flex;
+ 
+}
+
+
+/* Styles for footer heading level 4 */
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Merriweather Sans', sans-serif;
+ 
+
+}
+/* Styles for footer paragraphs */
+.footer p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #0a0909;
+}
+
+
+
+.footer-social p {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  
+}
+
+
+ 
+.footer-social img {
+ 
+  height: 29px;
+  width: 29px;
+}
+
+.footer-info,
+.footer-contact,
+.footer-social {
+  flex-basis: 199px; 
+}
+
+

@@ -1,0 +1,271 @@
+
+/* Header Styles */
+#header {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f7f3f3;
+    color: #131212;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+#header > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#header > div > div:nth-child(1) {
+    display: flex;
+}
+
+/*Styling header's heading*/
+#header > div > div:nth-child(1) > h1 {
+    font-family: 'Beau Rivage', cursive;
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+/*Styling the nav in the header*/
+#header > div > div:nth-child(2) {
+    display: inline;
+}
+#header nav{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+#header nav ul {
+    list-style: none;
+    padding: 0;
+}
+#header nav li {
+    display: inline;
+    margin-right: 1rem;
+    padding: 0 10px;
+}
+#header nav a {
+    color: #0f0e0e;
+    text-decoration: none;
+    font-size: 24px;
+}
+#header nav a:hover{
+    color: #0e0b0b;
+}
+
+/* Style the search input and button */
+.rightNav input[type="text"] {
+ 
+    border: solid #0e0b0b 2px;
+    border-radius: .9em;
+  }
+  
+  .rightNav button {
+  
+    background-color: rgb(22, 20, 20);
+    color: #ebe5e5;
+    border: none;
+    border-radius: 5em;
+    cursor: pointer;
+  }
+
+  /*main section*/
+
+  main {
+    padding: 20px;
+    background-color: beige;
+  }
+  /* Styles for the product section */
+  .product-section {
+    text-align: center;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, rgb(243 243 236 / 0%), rgb(197 188 119));
+  }
+  
+  .product-section h1 {
+    font-size: 28px;
+    font-family: 'Josefin Sans',sans-serif;
+    margin-bottom: 20px;
+    background-color: #c5b8b9bd;
+    height: 70px;
+    padding-top: 20px;
+  }
+  /* Styles for the product container */
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px;
+    grid-gap: 30px;
+  }
+  /* Styles for the product cards */
+  .product-card {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #c5b8b9bd;
+  }
+  
+  .product-card > img {
+    width: auto;
+    height:150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+    
+  }
+
+  /* Hover effect - Enlarge the product cards */
+  .product-card > img:hover{
+    transform: rotateY(.5turn);
+  }
+  /* Button style for 'Our Vision' */
+  .bb2{
+    background-color: #3a3a38;
+    color: #f5f2f2;
+    border-radius: 20px;
+    cursor: pointer;
+    padding:7px;
+    
+  }
+  
+  .product-card > h3 {
+    font-size: 20px;
+    font-family:  'Varela Round',sans-serif;;
+    margin-bottom: 10px;
+  }
+  
+  .product-card > p {
+    font-size: 16px;
+    font-family: 'Preahvihear',sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* Styles for the 'Check Out' section */
+  .check-out{
+    align-items: center;
+    text-align: center;
+  }
+  /* Button styles for 'Check Out' button */
+  .btnn{
+    padding: 10px;
+    background-color: #9b804c;
+    cursor: pointer;
+    border-radius:6px;
+    color: #f5f2f2;
+  }
+  /* Hover effect for button */
+  .btn-container-1{
+    width: 5%;
+    margin: auto;
+  }
+  .btn-container-1 .btn{
+    color: #0f0e0e;
+    font-weight: 400;
+    line-height: 2.8em;
+    margin: auto;
+    max-width: 0em;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+  }
+  .btn-container-1 .btn-1{
+    font-weight: 100;
+  }
+  .btn-container-1 .btn-1 svg{
+    height: 2.8em;
+    width: 12.5em;
+    position: absolute;
+    left: -3.8em;
+  }
+  .btn-container-1 .btn-1 rect{
+    fill: none;
+    stroke: #0c0b0b;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  .btn-container-1 .btn-1:hover{
+    background: rgba(225, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: .06em;
+  }
+  .btn-container-1 .btn-1:hover rect{
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+  }
+ /* Styles for the product cards */
+.product-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: transform 0.3s; /* Add this line for smooth scaling transition */
+}
+
+/* Hover effect - Enlarge the product cards */
+.product-card:hover {
+  transform: scale(1.1);
+}
+.lastp{
+  font-family: 'Edu SA Beginner',sans-serif;
+  text-align: center;
+}
+  
+/*footer section*/
+.footer {
+    background-color: white;
+    color: #0a0909;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 29px 0;
+    display: flex;
+   
+  }
+  
+ 
+  /* Styles for footer heading level 4 */
+  .footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+
+  }
+  /* Styles for footer paragraphs */
+  .footer p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #0a0909;
+  }
+  
+
+
+  .footer-social p {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    
+  }
+  
+  
+   
+  .footer-social img {
+   
+    height: 29px;
+    width: 29px;
+  }
+
+  .footer-info,
+  .footer-contact,
+  .footer-social {
+    flex-basis: 199px; 
+  }

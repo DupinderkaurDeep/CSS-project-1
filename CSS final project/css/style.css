@@ -1,0 +1,364 @@
+
+/* Styles for the header section */
+#header {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f7f3f3;
+    color: #131212;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+#header > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#header > div > div:nth-child(1) {
+    display: flex;
+}
+
+/*Styling header's heading*/
+#header > div > div:nth-child(1) > h1 {
+    font-family: 'Beau Rivage', cursive;
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+/*Styling the nav in the header*/
+#header > div > div:nth-child(2) {
+    display: inline;
+}
+#header nav{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+#header nav ul {
+    list-style: none;
+    padding: 0;
+}
+#header nav li {
+    display: inline;
+    margin-right: 1rem;
+    padding: 0 10px;
+}
+#header nav a {
+    color: #0f0e0e;
+    text-decoration: none;
+    font-size: 24px;
+}
+#header nav a:hover{
+    color: #0e0b0b;
+}
+
+/* Style the search input and button */
+.rightNav input[type="text"] {
+ 
+    border: solid #0e0b0b 2px;
+    border-radius: .9em;
+  }
+  
+  .rightNav button {
+  
+    background-color: rgb(22, 20, 20);
+    color: #ebe5e5;
+    border: none;
+    border-radius: 5em;
+    cursor: pointer;
+  }
+
+/*main section*/
+
+  .video-masthead{
+    height: 100vh;
+  }
+
+  .video-masthead h2{
+    top: 90%;
+    font-size: 100px;
+    text-shadow: 4px 2px 4px rgba(0,0,0,0.5);
+    color: #c3bfc7;
+    
+    text-align: center;
+    width: 100%;
+  
+   
+    position: absolute;
+    font-family: 'Rancho', cursive;
+   
+  }
+ 
+  #background-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+
+/*images for bridal lehnga*/
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image {
+    flex: 1;
+    padding: 0%;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*image space*/
+section.image-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f1b8b2; /* Set your desired background color */
+  padding: 20px;
+  margin-top: 1.5em;
+  position: relative;
+  overflow: hidden; 
+  
+}
+
+.text-1 {
+  flex: 1;
+  text-align: center;
+}
+
+.text-1 p {
+  
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Fredericka the Great', serif;
+  color: #333; /* Set your desired text color */
+}
+
+.text-1 p:hover {
+  color: #ff4500; /* Change text color on hover */
+  transform: scale(1.05);
+}
+
+.image-8,
+.image-9 {
+  flex: 1;
+  margin: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s transform;
+}
+
+.image-8 img,
+.image-9 img {
+  width: 80%;
+  height: 80%;
+  border: 1px solid #ddd; /* Set your desired border color */
+  border-radius: 10px; /* Set your desired border radius */
+  transition: 0.3s; /* Add a smooth transition effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+}
+
+.image-8 img:hover,
+.image-9 img:hover {
+  border: 1px solid #555; /* Set your desired border color on hover */
+  border: 1px solid #555; /* Set your desired border color on hover */
+   transform: scale(1.05); /* Add a scale effect on hover */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Increase box-shadow on hover */
+   transform: rotateZ(.5turn);
+}
+
+.masthead-text {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: normal;
+  padding: 50px;
+ background-color: #f1b8b2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+ 
+  margin: 50px auto;
+}
+
+@font-face{
+  font-family: my font;
+  src: url(../fonts/Botham-Condensed.otf);
+}
+
+
+.masthead-text h2 {
+  font-family: my font;
+  font-size: 28px;
+    color: #0c0a0a;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+@font-face{
+  font-family: family font;
+  src: url(../fonts/KINGSLEY\ demo.otf);
+}
+
+.masthead-text p {
+  font-family: family font;
+    font-size: 16px;
+    color: #0f0e0e;
+    letter-spacing: 1.50px;
+
+}
+
+
+
+.image-row h2 {
+    font-size: 28px;
+    color: #f1b8b2; /* Change color to suit your design */
+    margin-bottom: 20px;
+}
+
+.image-row div{
+    margin: 0 10px;
+}
+
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease; /* Apply opacity effect on hover */
+}
+
+.image:hover img {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+
+.welcome {
+  width: auto;
+  height: 100vh;
+  margin-top: -2em;
+  margin-bottom: 1.5em;
+  background-image: url('../images/red-lehnga.webp'); 
+  background-size: cover;
+}
+
+
+.welcome h3{
+  font-size: 5em;
+    font-weight: bold;
+    color: #f78672;
+    text-align: center;
+    width: 100%;
+    font-family: 'Beau Rivage', cursive;
+    text-shadow: 0 4px 2px rgba(0,0,0,.5);
+}
+ .welcome p{
+  bottom: 100%;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: 'Beau Rivage', cursive;
+    text-shadow: 0 4px 2px rgba(0,0,0,.5);
+    color: #f78672;
+    text-align: center;
+    
+  }
+
+  .W1{
+    display: flex;
+justify-content: center;
+flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+   
+  }
+.bar-search{  
+  text-align: center;
+  margin-top: -10%;
+}
+
+.input-search {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.button-search {
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: #080808; /* Adjust the background color as needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/*footer section*/
+.footer {
+    background-color: white;
+    color: #0a0909;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 29px 0;
+    display: flex;
+   
+  }
+  
+ 
+  /* Styles for footer heading level 4 */
+  .footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+
+  }
+  /* Styles for footer paragraphs */
+  .footer p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #0a0909;
+  }
+  
+
+
+  .footer-social p {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    
+  }
+  
+  
+  
+  .footer-social img {
+   
+    height: 29px;
+    width: 29px;
+  }
+
+  .footer-info,
+  .footer-contact,
+  .footer-social {
+    flex-basis: 199px; 
+  }
+
